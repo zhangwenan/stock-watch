@@ -1,8 +1,6 @@
 # stock-watch
 Watching your stocks when you are coding. 
-VScode插件 | A股 | 港股 | 实时股票数据
-好好工作，股票涨停！
-GitHub: https://github.com/TDGarden/stock-watch 欢迎PR、star
+GitHub: https://github.com/zhangwenan/stock-watch 欢迎PR、star
 
 ## Configuration
 修改用户配置，添加你所需要监控的股票代码

@@ -62,7 +62,8 @@ function getUpdateInterval() {
 }
 
 function getItemText(item) {
-    return `「${item.name}」${keepTwoDecimal(item.price)} ${item.percent >= 0 ? '📈' : '📉'} ${keepTwoDecimal(item.percent * 100)}%`;
+    // ${item.percent >= 0 ? '📈' : '📉'}
+    return `「${item.name}」${keepTwoDecimal(item.price)} ${keepTwoDecimal(item.percent * 100)}`;
 }
 
 function getTooltipText(item) {
@@ -85,7 +86,7 @@ function fetchAllData() {
                 let data = [];
                 Object.keys(result).map(item => {
                     if(!result[item].code){
-                        result[item].code = item; //兼容港股美股
+                        result[item].code = item; //兼容hk\us
                     }
                     data.push(result[item])
                 })
